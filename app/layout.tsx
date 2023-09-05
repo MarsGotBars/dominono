@@ -1,6 +1,7 @@
 import '@/styling/globals.css'
 import type { Metadata } from 'next'
 import { Jost } from 'next/font/google'
+import Header from '@/layout/Header'
 const jost = Jost({ subsets: ['latin'] })
 
 export const metadata: Metadata = {

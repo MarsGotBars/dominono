@@ -7,7 +7,9 @@ import { useState } from 'react'
 const tabs = ['Pizza', 'Side dishes', 'Drinks', 'Desserts']
 export default function Header({ subItem }: any) {
     const [selectedTab, setSelectedTab] = useState<string | null>('Pizza');
-    const { vegan, classics } = subItem
+    const { vegan, classics } = subItem ?? {}
+    console.log(subItem);
+    
     return (
         <header className="flex align-center justify-between bg-red-400 sticky top-0 w-full z-10">
             <nav className="mx-4 py-1 flex items-end justify-center w-full bg-white">
