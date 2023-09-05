@@ -1,7 +1,9 @@
-export default function CardList(){
+export const CardList = ({children}:any) =>{
     return(
         <div>
-            
+            {children}
         </div>
     )
 }
+
+export default CardList

@@ -8,11 +8,11 @@ const config: Config = {
     './layout/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
-    colors: {
-      red: '#d2112c',
-      blue: '#0077ac',
-    },
     extend: {
+      colors: {
+        red: '#d2112c',
+        blue: '#0077ac',
+      },
       container: {
         center: true,
         padding: '4rem',
