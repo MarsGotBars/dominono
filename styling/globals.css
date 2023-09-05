@@ -30,7 +30,7 @@ li .highlight{
 }
 
 ::selection{
-  @apply text-white bg-red
+  @apply text-white bg-red;
 }
 /* @media (prefers-color-scheme: dark) {
   :root {

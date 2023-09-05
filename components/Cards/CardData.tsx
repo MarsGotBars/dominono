@@ -1,6 +1,6 @@
 const CardData = {
     Pizzas: {
-        "vegan": [
+        vegan: [
             {
                 "id": 0,
                 "item": "pepperoni",
@@ -23,7 +23,7 @@ const CardData = {
                 "price": 19.99
             },
         ],
-        "classics": [
+        classics: [
             {
                 "id": 0,
                 "item": "pepperonis",
@@ -48,7 +48,7 @@ const CardData = {
         ]
     },
     Drinks: {
-        "shakes": [
+        shakes: [
             {
                 "id": 0,
                 "item": "shake",
@@ -64,15 +64,13 @@ const CardData = {
                 "price": 3.39
             },
         ],
-        "drinks": [
+        drinks: [
             {
-
                 "id": 0,
                 "item": "cola",
                 "src": "",
                 "info": "coke",
                 "price": 3.39
-
             }
         ]
     }

@@ -1,6 +1,6 @@
-export const CardList = ({children}:any) =>{
+export const CardList = ({children, id}:any) =>{    
     return(
-        <div>
+        <div id={id}>
             {children}
         </div>
     )

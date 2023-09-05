@@ -1,7 +1,6 @@
 import '@/styling/globals.css'
 import type { Metadata } from 'next'
 import { Jost } from 'next/font/google'
-import Header from '@/layout/Header'
 const jost = Jost({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -16,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={jost.className}><Header/>{children}</body>
+      <body className={jost.className}>{children}</body>
     </html>
   )
 }
