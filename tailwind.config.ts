@@ -15,7 +15,7 @@ const config: Config = {
       },
       container: {
         center: true,
-        padding: '4rem',
+        padding: '7rem',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

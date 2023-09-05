@@ -28,7 +28,7 @@ const CardData = {
                 "id": 0,
                 "item": "pepperonis",
                 "src": "",
-                "info": "",
+                "info": "Tomatensaus, kaas, mozzarella en pepperoni.",
                 "price": 19.99
             },
             {
