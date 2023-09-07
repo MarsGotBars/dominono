@@ -7,12 +7,9 @@ import { PageWrapper } from "pagewrapper/Pagewrapper";
 
 export default function Pizza() {
     const { Pizzas } = CardData
-    console.log(Object.entries(Pizzas));
-
     return (
         <PageWrapper>
             {Object.entries(Pizzas).map((item, key: number) => {
-                console.log(item, key);
                 const category = item[0].charAt(0).toUpperCase() + item[0].slice(1);
                 return (
                     <div key={key}>
