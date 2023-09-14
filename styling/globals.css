@@ -8,6 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+/* Headings */
 h1, h2, h3, h4, h5, h6{
   @apply my-2;
 }
@@ -18,9 +19,15 @@ h2{
 h3{
   @apply text-lg;
 }
+/* Headings */
+
+/* Text */
 p{
   @apply text-base;
 }
+/* Text */
+
+/* Nav */
 ul > a > li, ul > li{
   @apply cursor-pointer px-4 py-2 z-10 relative text-lg;
 }
@@ -28,10 +35,20 @@ ul > a > li, ul > li{
 li .highlight{
   @apply absolute top-0 left-0 w-full h-full bg-blue rounded-tr-lg rounded-tl-lg z-[-1];
 }
+/* Nav */
 
+/* General layout */
+main > div + div{
+  @apply mt-24
+}
+/* General layout */
+
+/* Selection */
 ::selection{
   @apply text-white bg-red;
 }
+/* Selection */
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

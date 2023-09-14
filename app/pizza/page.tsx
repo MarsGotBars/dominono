@@ -4,10 +4,13 @@ import { cardTypes } from "types";
 import Card from "@/components/Cards/Card"
 import CardList from "@/components/Cards/CardList";
 import { PageWrapper } from "pagewrapper/Pagewrapper";
+import SubNav from "@/layout/SubNav";
 
 export default function Pizza() {
     const { Pizzas } = CardData
     return (
+        <>
+        <SubNav subItem={Pizzas}/>
         <PageWrapper>
             {Object.entries(Pizzas).map((item, key: number) => {
                 const category = item[0].charAt(0).toUpperCase() + item[0].slice(1);
@@ -25,5 +28,6 @@ export default function Pizza() {
                 )
             })}
         </PageWrapper>
+        </>
     )
 }

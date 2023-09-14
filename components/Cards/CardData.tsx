@@ -73,6 +73,33 @@ const CardData = {
                 "price": 3.39
             }
         ]
+    },
+    Sides: {
+        "Filler": [
+            {
+                "id": 0,
+                "item": "shake",
+                "src": "",
+                "info": "some text",
+                "price": 3.39
+            },
+            {
+                "id": 0,
+                "item": "shake",
+                "src": "",
+                "info": "more text",
+                "price": 3.39
+            },
+        ],
+        "Snack": [
+            {
+                "id": 0,
+                "item": "cola",
+                "src": "",
+                "info": "coke",
+                "price": 3.39
+            }
+        ]
     }
 }
 

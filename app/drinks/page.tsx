@@ -1,11 +1,17 @@
+'use client'
 import { PageWrapper } from "pagewrapper/Pagewrapper";
-
-export default function Drinks(){
+import SubNav from "@/layout/SubNav";
+import CardData from "@/components/Cards/CardData";
+export default function Drinks() {
+    const {Drinks} = CardData
     return (
-        <PageWrapper>
-            <div>
-                Sides
-            </div>
-        </PageWrapper>
+        <>
+            <SubNav subItem={Drinks} />
+            <PageWrapper>
+                <div>
+                    Sides
+                </div>
+            </PageWrapper>
+        </>
     );
 }

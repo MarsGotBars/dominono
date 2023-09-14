@@ -1,10 +1,17 @@
+'use client'
 import { PageWrapper } from "pagewrapper/Pagewrapper";
-export default function Sides(){    
+import SubNav from "@/layout/SubNav";
+import CardData from "@/components/Cards/CardData";
+export default function Sides() {
+    const { Sides } = CardData
     return (
-        <PageWrapper>
-            <div>
-                Sides
-            </div>
-        </PageWrapper>
+        <>
+            <SubNav subItem={Sides} />
+            <PageWrapper>
+                <div>
+                    Sides
+                </div>
+            </PageWrapper>
+        </>
     );
 }

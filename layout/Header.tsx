@@ -4,11 +4,9 @@ import dominono from "@/assets/logos/dominono.png"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { usePathname } from 'next/navigation';
-import Pizza from "app/pizza/page"
 
 const tabs = ['pizza', 'sides', 'drinks', 'desserts']
-export default function Header({ subItem }: any) {
-    const { vegan, classics } = subItem ?? {}
+export default function Header() {
 
     const pathname = usePathname();
     const path = pathname.slice(1);
@@ -40,17 +38,6 @@ export default function Header({ subItem }: any) {
                     </ul>
                 </div>
                 <div className="flex self-stretch w-1/3"></div>
-            </nav>
-            <nav className="bg-blue w-full fixed h-12 top-20">
-                <ul className="flex items-center justify-center">
-                    {Object.keys(subItem).map((item:any, id:number)=>{
-                        return(
-                            <a key={id} href={`#${item}`}><li>
-                                {`${item} ${item.length}`}
-                            </li></a>
-                        )
-                    })}
-                </ul>
             </nav>
         </header>
     )
