@@ -28,12 +28,16 @@ p{
 /* Text */
 
 /* Nav */
-ul > a > li, ul > li{
+ul > a > li, nav > ul > li{
   @apply cursor-pointer px-4 py-2 z-10 relative text-lg;
 }
 
 li .highlight{
   @apply absolute top-0 left-0 w-full h-full bg-blue rounded-tr-lg rounded-tl-lg z-[-1];
+}
+
+li.subnav{
+  @apply border-t-2 border-x-2 rounded-tr-xl rounded-tl-xl border-transparent hover:border-blue duration-200;
 }
 /* Nav */
 
